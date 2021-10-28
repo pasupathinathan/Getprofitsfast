@@ -1,0 +1,69 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+  .toolbar {
+    position: sticky;
+    position: -webkit-sticky; 
+    top: 0; 
+    z-index: 1000;
+    background: #ffa500;
+    color: #ffffff;
+}    
+
+.footer{
+  background-image: url('../../../assets/imgs/fo.jpg');
+  color:#ffffff;
+  padding: 3%;
+}
+
+.unstyle{
+  list-style-type: none;
+}
+
+.icon {
+  color: orange;
+}
+.mat-list-base .mat-list-item{
+   cursor: pointer;
+    height: 30px;
+    color: #ffffff;
+}
+
+
+
+.mat-list-base .mat-list-item :hover{
+  cursor: pointer;
+   height: 25px;
+   color: orange;
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  opacity: 0;
+  transition: all .2s ease-in-out;
+ }
+ .show-scrollTop {
+  opacity: 1;
+  transition: all .2s ease-in-out;
+ }
+
+.btns {
+  background-image: linear-gradient(to right, #114090, #132866);
+   border-radius: 50%;
+   border: #fff solid 1px;
+   height: 50px;
+   width: 50px;
+   color: #fff;
+ }
+
+ .btns:hover {
+  background-color: #1e3d8a;
+  border-radius: 50%;
+  border: #fff solid 1px;
+  height: 50px;
+  width: 50px;
+  color: #fff;
+ }

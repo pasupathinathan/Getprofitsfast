@@ -1,0 +1,224 @@
+<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true"
+      aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="100000">
+      <img src="./assets/imgs/h3.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block cap_1">
+        <h2>Bringing Growers Worldwide
+          Closer To You</h2>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="5000">
+      <img src="./assets/imgs/h2.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption cap_2 d-none d-md-block">
+
+        <h2>With Vast Location Coverage In The UAE
+          We Ensure That Your Order
+          Arrives With Ease</h2>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="./assets/imgs/h1.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block cap_3">
+        <h2>Some representative placeholder content for the third slide.</h2>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<div class="container">
+  <h1>Products</h1>
+  <div class="row">
+    <div class="col-md-3 imgr" *ngFor="let p of products">
+      <img [src]=p.image_url class="ab" alt="..." (click)="pro_duct(p.name)">
+      <div>
+        <h2>{{p.name}}</h2>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <h1>Why Choose Us</h1>
+
+  <div class="row">
+    <div class="col-md-6" style="justify-content: center;padding:3%">
+      <mat-accordion>
+        <mat-expansion-panel [expanded]="true">
+          <mat-expansion-panel-header class="header">
+            <mat-panel-title>
+              QUALITY IS OUR PROMISE
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <p>Whether it is fruits, vegetables, meat or any other kind product from us, we assure to deliver nothing but
+            the best and uncompromised quality. With our trained quality professionals, we make sure that your food is
+            always safe for consumption.</p>
+        </mat-expansion-panel>
+        <mat-expansion-panel style="margin-top: 3%;">
+          <mat-expansion-panel-header class="header">
+            <mat-panel-title>
+              BEST PRICE GUARANTEE
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <p>Our long-standing partnerships with growers and producers all around the world allow us to deliver premium
+            products to you with the best possible price.</p>
+        </mat-expansion-panel>
+      </mat-accordion>
+    </div>
+    <div class="col-md-6" style="justify-content: center;padding:3%">
+      <mat-accordion>
+        <mat-expansion-panel [expanded]="true">
+          <mat-expansion-panel-header class="header">
+            <mat-panel-title>
+              TOP NOTCH SERVICE
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <p>Our staffs are trained to handle complex situations to ensure that you get your order at the right place,
+            at the right time. We also value feedback for service improvement to serve you better.</p>
+        </mat-expansion-panel>
+        <mat-expansion-panel style="margin-top: 3%;">
+          <mat-expansion-panel-header class="header">
+            <mat-panel-title>
+              50 YEARS IN THE BUSINESS
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <p>It’s not just about the hard-work and glory, but it’s also about the long-lived passion towards service and
+            the motivation given to us by thousands of loyal and satisfied customers that fuels our aspirations and
+            growth.</p>
+        </mat-expansion-panel>
+      </mat-accordion>
+    </div>
+  </div>
+</div>
+
+<div class="container" style="margin-bottom: 3%;">
+  <h1>Latest News</h1>
+  <owl-carousel-o [options]="type">
+    <ng-container>
+
+      <ng-template  carouselSlide>
+        <mat-card class="card">
+          <mat-card-header style="margin: 0;">
+            <div class="col-4" class="b_date">
+              <span>
+                <h1 style="margin: 3%;">19</h1>
+                <small>OCT<br>2021</small>
+              </span>
+            </div>
+            <div class="col-8" class="b_title">
+              <h3>Export to USA</h3>
+            </div>
+          </mat-card-header>
+          <mat-card-content style="text-align: left;">
+            <img src="./assets/imgs/b1.jpg">
+            <p class="b_con">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry...
+            </p>
+            <button mat-flat-button class="b_but">more</button>
+          </mat-card-content>
+        </mat-card>
+      </ng-template>
+      <ng-template  carouselSlide>
+        <mat-card class="card">
+          <mat-card-header style="margin: 0;">
+            <div class="col-4" class="b_date">
+              <span>
+                <h1 style="margin: 3%;">19</h1>
+                <small>OCT<br>2021</small>
+              </span>
+            </div>
+            <div class="col-8" class="b_title">
+              <h3>Export in USA</h3>
+            </div>
+          </mat-card-header>
+          <mat-card-content style="text-align: left;">
+            <img src="./assets/imgs/b2.jpg">
+            <p class="b_con">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry...
+            </p>
+            <button mat-flat-button class="b_but">more</button>
+          </mat-card-content>
+        </mat-card>
+      </ng-template>
+      <ng-template  carouselSlide>
+        <mat-card class="card">
+          <mat-card-header style="margin: 0;">
+            <div class="col-4" class="b_date">
+              <span>
+                <h1 style="margin: 3%;">19</h1>
+                <small>OCT<br>2021</small>
+              </span>
+            </div>
+            <div class="col-8" class="b_title">
+              <h3>Export in USA</h3>
+            </div>
+          </mat-card-header>
+          <mat-card-content style="text-align: left;">
+            <img src="./assets/imgs/b3.jpg">
+            <p class="b_con">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry...
+            </p>
+            <button mat-flat-button class="b_but">more</button>
+          </mat-card-content>
+        </mat-card>
+      </ng-template>
+      <ng-template  carouselSlide>
+        <mat-card class="card">
+          <mat-card-header style="margin: 0;">
+            <div class="col-4" class="b_date">
+              <span>
+                <h1 style="margin: 3%;">19</h1>
+                <small>OCT<br>2021</small>
+              </span>
+            </div>
+            <div class="col-8" class="b_title">
+              <h3>Export in USA</h3>
+            </div>
+          </mat-card-header>
+          <mat-card-content style="text-align: left;">
+            <img src="./assets/imgs/b4.jpg">
+            <p class="b_con">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry...
+            </p>
+            <button mat-flat-button class="b_but">more</button>
+          </mat-card-content>
+        </mat-card>
+      </ng-template>
+      <ng-template  carouselSlide>
+        <mat-card class="card">
+          <mat-card-header style="margin: 0;">
+            <div class="col-4" class="b_date">
+              <span>
+                <h1 style="margin: 3%;">19</h1>
+                <small>OCT<br>2021</small>
+              </span>
+            </div>
+            <div class="col-8" class="b_title">
+              <h3>Export in USA</h3>
+            </div>
+          </mat-card-header>
+          <mat-card-content style="text-align: left;">
+            <img src="./assets/imgs/b5.jpg">
+            <p class="b_con">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry...
+            </p>
+            <button mat-flat-button class="b_but">more</button>
+          </mat-card-content>
+        </mat-card>
+      </ng-template>
+    </ng-container> 
+  </owl-carousel-o>
+</div>

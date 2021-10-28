@@ -1,0 +1,29 @@
+[{
+ "id":"1",
+ "name":"vegtables",
+ "content":"Farzana offers over 350 varieties of fresh fruits, vegetables and herbs from all over the world depending on the seasonal availability. Our products are of fresh, top-quality and completely hygienic with full traceability records.",
+ "image_url":"./assets/imgs/p.jpg",
+ "list":["Broccoli","Cabbage","Capsicum","Carrot","Cauliflower","Cucumber", "Garlic", "Ginger", "Potato", "Onions", "Tomato", "French Beans", "Iceberg", "Beetroot", "Radish"]
+},
+{
+ "id":"2",
+ "name":"Fruits",
+ "content":"Farzana offers over 350 varieties of fresh fruits, vegetables and herbs from all over the world depending on the seasonal availability. Our products are of fresh, top-quality and completely hygienic with full traceability records.",
+ "image_url":"./assets/imgs/p3.jpg",
+"list":["Broccoli","Cabbage","Capsicum","Carrot","Cauliflower","Cucumber", "Garlic", "Ginger", "Potato", "Onions", "Tomato", "French Beans", "Iceberg", "Beetroot", "Radish"]
+},
+{
+ "id":"3",
+ "name":"Fresh Eggs",
+ "content":"Farzana offers over 350 varieties of fresh fruits, vegetables and herbs from all over the world depending on the seasonal availability. Our products are of fresh, top-quality and completely hygienic with full traceability records.",
+ "image_url":"./assets/imgs/p2.jpg",
+ "list":["Broccoli","Cabbage","Capsicum","Carrot","Cauliflower","Cucumber", "Garlic", "Ginger", "Potato", "Onions", "Tomato", "French Beans", "Iceberg", "Beetroot", "Radish"]
+},
+{
+ "id":"4",
+ "name":"Frozen Foods",
+ "content":"Farzana offers over 350 varieties of fresh fruits, vegetables and herbs from all over the world depending on the seasonal availability. Our products are of fresh, top-quality and completely hygienic with full traceability records.",
+ "image_url":"./assets/imgs/p1.jpg",
+ "list":["Frozen Frutis","Frozen Vegetables","Capsicum","Carrot","Cauliflower","Cucumber", "Garlic", "Ginger", "Potato", "Onions", "Tomato", "French Beans", "Iceberg", "Beetroot", "Radish"]
+}
+]

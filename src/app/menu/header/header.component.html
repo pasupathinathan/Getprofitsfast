@@ -1,0 +1,102 @@
+<div>
+  <mat-toolbar class="toolbar">
+    <button mat-icon-button class="example-icon" (click)="sidenav.toggle()"
+      aria-label="Example icon-button with menu icon" fxShow="true" fxHide.gt-sm>
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span [routerLink]="['/home']">Getprofitsfast</span>
+    <div fxFlex fxHide.lt-md fxLayoutAlign="flex-end center">
+      <button mat-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon" [routerLink]="['/home']">
+        Home
+      </button>
+      <button mat-button  [matMenuTriggerFor]="menu">
+        Products
+      </button>
+      <mat-menu #menu="matMenu">
+        <div *ngFor="let p of products">
+        <button mat-menu-item (click)="pro_duct(p.name)">{{p.name}}</button>
+      </div>
+      </mat-menu>
+      <button mat-button class="example-icon" aria-label="Example icon-button with share icon">
+        Customers
+      </button>
+      <button mat-button class="example-icon" aria-label="Example icon-button with share icon">
+        Partners
+      </button>
+      <button mat-button class="example-icon" aria-label="Example icon-button with share icon">
+        Our Company
+      </button>
+      <button mat-button class="example-icon" aria-label="Example icon-button with share icon">
+        Contact
+      </button>
+    </div>
+  </mat-toolbar>
+  <mat-sidenav-container fxFlexFill>
+    <mat-sidenav #sidenav style="width: 250px;text-align: center;">
+
+    </mat-sidenav>
+    <mat-sidenav-content fxFlexFill>
+      <router-outlet></router-outlet>
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <h3>About Us</h3>
+              <p>Farzana Trading LLC is a key importer and distributor for fresh fruit and vegetables in UAE market
+                established.. (Read more)</p>
+            </div>
+            <div class="col-md-3">
+              <h3 style="margin-left: 8%;">Our Products</h3>
+              <p>
+                <mat-list style="padding:0;" *ngFor="let p of products">
+                  <mat-list-item (click)="pro_duct(p.name)">
+                    <mat-icon class="icon">keyboard_arrow_right</mat-icon> {{p.name}}
+                  </mat-list-item>
+                  <!-- <mat-list-item>
+                    <mat-icon class="icon">keyboard_arrow_right</mat-icon> Fruits
+                  </mat-list-item>
+                  <mat-list-item>
+                    <mat-icon class="icon">keyboard_arrow_right</mat-icon> Fresh Eggs
+                  </mat-list-item>
+                  <mat-list-item>
+                    <mat-icon class="icon">keyboard_arrow_right</mat-icon> Frezon Food
+                  </mat-list-item> -->
+                </mat-list>
+              </p>
+            </div>
+            <div class="col-md-3">
+              <h3 style="margin-left: 8%;">Our Company</h3>
+              <mat-list style="padding:0;">
+                <mat-list-item>
+                  <mat-icon class="icon">keyboard_arrow_right</mat-icon> Partners
+                </mat-list-item>
+                <mat-list-item>
+                  <mat-icon class="icon">keyboard_arrow_right</mat-icon> Our Facilites
+                </mat-list-item>
+              </mat-list>
+            </div>
+            <div class="col-md-3">
+              <h3 style="margin-left: 8%;">Contact Us</h3>
+              <mat-list style="padding:0;">
+              <mat-list-item>
+                <mat-icon class="icon">email</mat-icon> <a style="margin: 6%;text-decoration: none;color: white;" 
+                href="mailto: pasupathinathanab@gmail.com">
+                  pasupathinathanab@gmail.com</a>
+              </mat-list-item>
+              <mat-list-item>
+                <mat-icon class="icon">call</mat-icon> <a style="margin: 6%;text-decoration: none;color: white;" 
+                href="tel:9042918709"> +91 - 9042918709 </a>
+              </mat-list-item>
+            </mat-list>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- <div class="scroll-to-top" [ngClass]="{'show-scrollTop': windowScrolled}">
+        <button (click)="scrollToTop()">
+            <i class="fa fa-chevron-up"></i>
+        </button>
+      </div> -->
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>
